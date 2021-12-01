@@ -1,3 +1,72 @@
+/* Gemensamt för allt */
+
 body {
-  background:grey;
+  margin: 0;
 }
+
+.container {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-rows: 5rem 2rem 1fr 3rem;
+  grid-template-areas:
+  'hd'
+  'nv'
+  'mn'
+  'ft'
+}
+
+.header {
+  grid-area: hd;
+  background-color: aqua;
+}
+
+.nav {
+  grid-area: nv;
+  background-color: blue;
+}
+
+.main {
+  grid-area: mn;
+  background-color: coral;
+}
+
+.footer {
+  grid-area: ft;
+  background-color: darkgreen;
+}
+/* Endast för förstasidan */
+#main1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+  'as1 ac1'
+  'as1 ac2'
+}
+
+#aside1 {
+  grid-area: as1;
+  background-color: darksalmon;
+}
+
+#article1 {
+  grid-area: ac1;
+  background-color: deeppink;
+}
+
+#article2 {
+  grid-area: ac2;
+  background-color: firebrick;
+}
+
+/* Endast för andrasidan */
+
+#main2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+  'ac3 ac4'
+}
+
+/* Endast för tredjesidan */
