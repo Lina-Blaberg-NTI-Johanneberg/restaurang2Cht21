@@ -8,7 +8,7 @@ body {
   display: grid;
   height: 100vh;
   width: 100vw;
-  grid-template-rows: 5rem 2rem 1fr 3rem;
+  grid-template-rows: 4.2rem 1.8rem 1fr 2.8rem;
   grid-template-areas:
   'hd'
   'nv'
@@ -19,11 +19,29 @@ body {
 .header {
   grid-area: hd;
   background-color: aqua;
+  display: flex;
+  align-items: center;
 }
 
 .nav {
   grid-area: nv;
   background-color: blue;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1rem;
+  color: black;
+}
+
+a {
+  text-decoration: none;
 }
 
 .main {
@@ -34,11 +52,16 @@ body {
 .footer {
   grid-area: ft;
   background-color: darkgreen;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
+
 /* Endast för förstasidan */
+
 #main1 {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
   grid-template-rows: 50% 50%;
   grid-template-areas:
   'as1 ac1'
@@ -48,16 +71,24 @@ body {
 #aside1 {
   grid-area: as1;
   background-color: darksalmon;
+  margin: 1rem;
 }
 
 #article1 {
   grid-area: ac1;
   background-color: deeppink;
+  margin: 1rem;
+  font-size: 2rem;
 }
 
 #article2 {
   grid-area: ac2;
   background-color: firebrick;
+  margin: 1rem;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 /* Endast för andrasidan */
@@ -69,4 +100,60 @@ body {
   'ac3 ac4'
 }
 
+#article3 {
+  grid-area: ac3;
+  background-color: goldenrod;
+  margin: 1rem;
+}
+
+#article4 {
+  grid-area: ac4;
+  background-color: lawngreen;
+  margin: 1rem;
+}
+
 /* Endast för tredjesidan */
+
+#main3 {
+  display: grid;
+  grid-template-rows: 75% 25%;
+  grid-template-areas:
+  'arb1 arb2 arb3'
+  'tex1 tex2 tex3'
+}
+
+#arbetare1 {
+  grid-area: arb1;
+  background-color: lightcoral;
+  margin: 1rem;
+}
+
+#arbetare2 {
+  grid-area: arb2;
+  background-color: rgb(80, 21, 21);
+  margin: 1rem;
+}
+
+#arbetare3 {
+  grid-area: arb3;
+  background-color: rgb(142, 190, 53);
+  margin: 1rem;
+}
+
+#text1 {
+  grid-area: tex1;
+  background-color: rgb(66, 101, 199);
+  margin: 1rem;
+}
+
+#text2 {
+  grid-area: tex2;
+  background-color: rgb(16, 129, 59);
+  margin: 1rem;
+}
+
+#text3 {
+  grid-area: tex3;
+  background-color: rgb(143, 26, 133);
+  margin: 1rem;
+}
